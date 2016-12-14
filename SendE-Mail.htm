@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="Keywords" content="Gürsu Aşık" />
+    <meta name="Author" content="Gürsu Aşık" />
+    <title>E-Mail Gönder</title>
+    <script src="Control.js" language="javascript"></script>
+</head>
+<body bgcolor="#ffc8a4">
+    <center>
+        <form name="Form" action="mailto:gursuasik@gmail.com" method="post" onsubmit="return ValidateForm()">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr height="100">
+                    <td colspan="2" style="font-size: 20px" >Görüşlerinizi Belirtiniz...</td>
+                </tr>
+                <tr>
+                    <td>Ad: *</td>
+                    <td><input id="Text1" type="text" name="fname"/></td>
+                </tr>
+                <tr>
+                    <td>Soyad: *</td>
+                    <td><input id="Text2" type="text" name="fsurname"/></td>
+                </tr>
+                <tr>
+                    <td>Doğum Tarihi (gg.aa.yyyy): *</td>
+                    <td><input id="Text3" type="text" name="fdateofbirth"/></td>
+                </tr>
+                <tr>
+                    <td>Doğum Yeri: </td>
+                    <td><input id="Text4" type="text" name="fplaceofbirth"/></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyet: </td>
+                    <td>
+                        <input id="Radio1" type="radio" name="fgender" value="Bay" />Bay
+                        <input id="Radio2" type="radio" name="fgender" value="Bayan" />Bayan
+                    </td>
+                </tr>
+                <tr>
+                    <td>Mail Adresi: *</td>
+                    <td><input id="Text5" type="text" name="femail"/></td>
+                </tr>
+                <tr>
+                    <td>Görüşleriniz: </td>
+                    <td><textarea id="TextArea1" name="finstructions" cols="40" rows="8"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>* Girilmesi zorunlu alanlardır.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input id="Submit1" type="submit" value="Kontrol Et" />
+                        <input id="Reset1" type="reset" value="Temizle" />
+                    </td>
+                </tr>
+            </table>
+       </form>
+    </center>
+</body>
+</html>
